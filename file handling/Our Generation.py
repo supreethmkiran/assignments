@@ -1,0 +1,11 @@
+f1=open("Our Generation.txt",'r')
+f2=open("Our Generation1.txt",'w')
+s=f1.readlines()
+f2.write(s[0])
+s.pop(0)
+l=list()
+for i in s:
+    l.insert(0,i)
+f2.writelines(l)
+f1.close()
+f2.close()
